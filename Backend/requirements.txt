@@ -1,0 +1,10 @@
+pandas
+numpy
+transformers
+flask
+fastapi
+httpx
+requests
+gunicorn
+uvicorn
+aiohttp
