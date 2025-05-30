@@ -1,24 +1,93 @@
-# Logs
-logs
+# -----------------------
+# General
+# -----------------------
 *.log
+*.env
+*.env.*
+.envrc
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# -----------------------
+# Python (Backend & Chatbot)
+# -----------------------
+__pycache__/
+*.py[cod]
+*.so
+.mypy_cache/
+.pytest_cache/
+venv/
+env/
+.idea/
+*.sqlite3
+
+# Ignore compiled model artifacts
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Ignore dataset caches
+*.npz
+*.npy
+*.h5
+
+# Ignore HuggingFace & Transformers caches
+.cache/
+transformers_cache/
+datasets/
+results/
+
+# Ignore Qdrant/Vector DB artifacts
+/chatbot/data/embeddings/
+*.qdrant
+
+# -----------------------
+# Node.js / Frontend
+# -----------------------
+node_modules/
+dist/
+build/
+*.lock
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+.cache/
+.vite/
 
-node_modules
-dist
-dist-ssr
-*.local
+# -----------------------
+# React
+# -----------------------
+/frontend/.next/
+/frontend/out/
+/frontend/.turbo/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# -----------------------
+# VSCode & IDE settings
+# -----------------------
+.vscode/
+.idea/
+
+# -----------------------
+# Docker
+# -----------------------
+**/__pycache__/
+**/.env
+**/.env.*
+**/Dockerfile.*
+docker-compose.override.yml
+
+# -----------------------
+# Misc
+# -----------------------
+*.tgz
+*.zip
+*.tar.gz
+*.egg-info/
+logs/
+temp/
+tmp/
+**/bevenv/
+**/botvenv/
