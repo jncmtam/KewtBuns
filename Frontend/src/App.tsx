@@ -9,7 +9,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/auth/callback" element={<Auth />} />
         <Route path="/login" element={<div>Login Page</div>} />
-        <Route path="/" element={<div>Home Page</div>} />
+        <Route path="/" element={<div className="flex flex-col justify-center items-center">Home Page</div>} />
       </Routes>
       <LoginButton />
     </BrowserRouter>
